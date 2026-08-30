@@ -17,7 +17,7 @@ import {
 } from "react-router-dom";
 
 import api from "../services/api";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../Context/AuthContext";
 
 function GigDetails() {
   const { id } = useParams();
