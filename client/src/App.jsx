@@ -4,8 +4,8 @@ import {
   Route,
 } from "react-router-dom";
 
-import Navbar from "./Components/Navbar";
-import ProtectedRoute from "./Components/ProtectedRoures";
+import Navbar from "./components/Navbar";
+import ProtectedRoute from "./components/ProtectedRoures";
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";
