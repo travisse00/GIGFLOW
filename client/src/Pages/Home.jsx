@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import api from "../Services/api";
 
 import {
   ArrowRight,
@@ -41,8 +41,8 @@ function Home() {
       try {
         const [gigsResponse, statsResponse] =
           await Promise.all([
-            axios.get("http://localhost:5000/api/gigs"),
-            axios.get("http://localhost:5000/api/stats"),
+            api.get("/gigs"),
+            api.get("/stats"),
           ]);
 
         // =========================
