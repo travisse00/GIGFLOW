@@ -393,7 +393,7 @@ function OrderDetails() {
                     </p>
 
                     <p className="font-semibold">
-                      ₦
+                      <DollarSign size={14} className="inline-block" />
                       {Number(
                         order.price || 0
                       ).toLocaleString()}

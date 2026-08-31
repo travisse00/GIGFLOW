@@ -449,7 +449,7 @@ function Profile() {
 
                           <DollarSign size={15} />
 
-                          ₦
+                          <DollarSign size={14} className="inline-block" />
                           {Number(
                             gig.price || 0
                           ).toLocaleString()}

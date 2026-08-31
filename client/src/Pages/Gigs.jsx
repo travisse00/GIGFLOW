@@ -6,6 +6,7 @@ import {
   ArrowUpDown,
   BriefcaseBusiness,
   User,
+  DollarSign,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import api from "../Services/api";
@@ -574,7 +575,7 @@ function Gigs() {
                         </p>
 
                         <p className="mt-1 text-lg font-semibold">
-                          ₦
+                          <DollarSign size={18} className="inline-block" />
                           {Number(
                             gig.price || 0
                           ).toLocaleString()}

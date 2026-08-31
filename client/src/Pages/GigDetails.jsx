@@ -317,7 +317,7 @@ function GigDetails() {
                     </p>
 
                     <p className="mt-1 text-lg font-semibold">
-                      ₦
+                      <DollarSign size={14} className="inline-block" />
                       {Number(
                         gig.price || 0
                       ).toLocaleString()}
@@ -417,7 +417,7 @@ function GigDetails() {
                   </p>
 
                   <p className="mt-1 text-2xl font-bold">
-                    ₦
+                    <DollarSign size={14} className="inline-block" />
                     {Number(
                       gig.price || 0
                     ).toLocaleString()}

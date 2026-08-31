@@ -12,6 +12,7 @@ import {
   ShoppingBag,
   TrendingUp,
   Star,
+  DollarSign,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -411,7 +412,7 @@ function Dashboard() {
               </p>
 
               <p className="mt-2 text-sm font-medium text-gray-300">
-                ₦
+                <DollarSign size={14} className="inline-block" />
                 {Number(
                   order.price || 0
                 ).toLocaleString()}
@@ -912,7 +913,7 @@ function Dashboard() {
                       <div className="mt-4 flex items-center justify-between">
 
                         <span className="font-semibold">
-                          ₦
+                          <DollarSign size={14} className="inline-block" />
                           {Number(
                             gig.price || 0
                           ).toLocaleString()}
