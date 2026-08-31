@@ -7,17 +7,17 @@ import {
 import Navbar from "./components/Navbar";
 import ProtectedRoute from "./components/ProtectedRoures";
 
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Gigs from "./pages/Gigs";
-import GigDetails from "./pages/GigDetails";
-import Dashboard from "./pages/Dashboard";
-import CreateGig from "./pages/CreateGig";
-import Profile from "./pages/Profile";
-import EditProfile from "./pages/EditProfile";
-import EditGig from "./pages/EditGigs";
-import OrderDetails from "./pages/OrderDetails";
+import Home from "./Pages/Home";
+import Login from "./Pages/Login";
+import Register from "./Pages/Register";
+import Gigs from "./Pages/Gigs";
+import GigDetails from "./Pages/GigDetails";
+import Dashboard from "./Pages/Dashboard";
+import CreateGig from "./Pages/CreateGig";
+import Profile from "./Pages/Profile";
+import EditProfile from "./Pages/EditProfile";
+import EditGig from "./Pages/EditGigs";
+import OrderDetails from "./Pages/OrderDetails";
 
 function App() {
   return (
