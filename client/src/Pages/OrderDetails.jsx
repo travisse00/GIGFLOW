@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 
-import api from "../services/api";
+import api from "../Services/api";
 import { useAuth } from "../Context/AuthContext";
 
 function OrderDetails() {

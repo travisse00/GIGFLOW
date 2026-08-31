@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
-import api from "../services/api";
+import api from "../Services/api";
 
 function EditGig() {
   const { id } = useParams();

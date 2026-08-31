@@ -10,7 +10,7 @@ import {
   CircleCheck,
 } from "lucide-react";
 
-import api from "../services/api";
+import api from "../Services/api";
 
 function NotificationBell() {
   const [notifications, setNotifications] = useState([]);

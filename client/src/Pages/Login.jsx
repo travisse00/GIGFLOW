@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Mail, Lock, Eye, EyeOff } from "lucide-react";
-import api from "../services/api";
+import api from "../Services/api";
 import { useAuth } from "../Context/AuthContext";
 
 const loginSchema = Yup.object({

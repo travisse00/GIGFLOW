@@ -8,7 +8,7 @@ import {
   User,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import api from "../services/api";
+import api from "../Services/api";
 
 function Gigs() {
   const [gigs, setGigs] = useState([]);

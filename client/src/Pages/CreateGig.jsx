@@ -7,7 +7,7 @@ import {
   Clock
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import api from "../services/api";
+import api from "../Services/api";
 
 const gigSchema = Yup.object({
   title: Yup.string()

@@ -10,7 +10,7 @@ import {
   Eye,
   EyeOff
 } from "lucide-react";
-import api from "../services/api";
+import api from "../Services/api";
 import { useAuth } from "../Context/AuthContext";
 
 const registerSchema = Yup.object({

@@ -14,7 +14,7 @@ import {
   useParams,
 } from "react-router-dom";
 
-import api from "../services/api";
+import api from "../Services/api";
 
 function Profile() {
   const { id } = useParams();
