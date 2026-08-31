@@ -1,7 +1,7 @@
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
-const { sendWelcomeEmail } = require("../services/email");
+
 
 const register = async (req, res) => {
   try {
@@ -33,11 +33,6 @@ const register = async (req, res) => {
       password: hashedPassword,
       role: role || "client"
     });
-    try {
-  await sendWelcomeEmail(user);
-} catch (emailError) {
-  console.error("Welcome email failed:", emailError.message);
-}
 
     // Create JWT
     const token = jwt.sign(
