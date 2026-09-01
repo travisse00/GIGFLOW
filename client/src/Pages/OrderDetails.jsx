@@ -17,7 +17,7 @@ import { Link, useParams } from "react-router-dom";
 
 import api from "../Services/api";
 import { useAuth } from "../Context/AuthContext";
-import OrderMessages from "../components/OrderMessages";
+import OrderMessages from "../Components/OrderMessages";
 
 function OrderDetails() {
   const { id } = useParams();
