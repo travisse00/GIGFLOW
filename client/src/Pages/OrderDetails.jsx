@@ -17,6 +17,7 @@ import { Link, useParams } from "react-router-dom";
 
 import api from "../Services/api";
 import { useAuth } from "../Context/AuthContext";
+import OrderMessages from "../components/OrderMessages";
 
 function OrderDetails() {
   const { id } = useParams();
@@ -524,6 +525,8 @@ function OrderDetails() {
             </section>
 
           </div>
+
+                    <OrderMessages orderId={order._id} />
 
           {/* RIGHT */}
 

@@ -12,6 +12,7 @@ const orderRoutes = require("./routes/orderRoutes");
 const statsRoutes = require("./routes/statsRoutes");
 const reviewRoutes = require("./routes/reviewRoutes");
 const notificationRoutes = require("./routes/notificationRoutes");
+const messageRoutes = require("./routes/messageRoutes");
 
 const { initSocket } = require("./utils/socket");
 
@@ -63,6 +64,7 @@ app.use(
   "/api/notifications",
   notificationRoutes
 );
+app.use("/api/messages", messageRoutes);
 
 /* =========================
    TEST ROUTE

@@ -64,12 +64,13 @@ function Navbar() {
 
             {authenticated ? (
               <>
-                <Link
+                {user.role === "freelancer" && (
+                  <Link
                   to="/create-gig"
                   className="text-sm text-gray-300 transition hover:text-white"
                 >
                   Create Gig
-                </Link>
+                </Link>)}
 
                 <Link
                   to="/dashboard"
